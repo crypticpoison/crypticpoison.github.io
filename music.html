@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Music - Cryptic Poison</title>
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png">
-    <link rel="icon" type="image/png" sizes="1254x1254" href="assets/img/Circular%20V3.png">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="assets/img/Circular%20V3%20Noisy.webp">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
     <link rel="stylesheet" href="assets/css/Features-Minimal-icons.css">
 </head>
 
@@ -27,12 +31,19 @@
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/tourvault.html">Tour Vault</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/music.html">Music</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/thecollective.html">The Collective</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../about.html">Bio</a><a class="dropdown-item" href="../thecollective.html">The Collective</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Music</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../music.html">Music</a><a class="dropdown-item" href="../thecollective.html">Tour Vault</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Discography</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../discography/osiris.html">Osiris</a><a class="dropdown-item" href="anti-ai-persona.html">Hella</a><a class="dropdown-item" href="lewdy-hell.html">Lewdy Hell</a><a class="dropdown-item" href="#">Breakin' Start</a><a class="dropdown-item" href="#">Groovin' Start</a></div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="/posts.html">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/no-ai-policy.html">No-AI Policy</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">No-AI Act &amp; Evidence</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../no-ai-policy.html">No-AI Policy</a><a class="dropdown-item" href="anti-ai-persona.html">Anti AI-Persona</a><a class="dropdown-item" href="tour-relics-and-process.html">Tour Relics &amp; Process</a></div>
+                    </li>
                     <li class="nav-item"><a class="nav-link visually-hidden invisible" href="/testimonials.html">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
                 </ul>
@@ -89,27 +100,59 @@
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Tour Vault</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="tourvault.html">Germany Tour 2026</a></li>
-                        <li><a href="tourvault.html">West Coast Tour 2022</a></li>
-                        <li><a href="#">Forgotten Tour in Forgotten</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
                     <h3 class="fs-6 fw-bold">About</h3>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">Bio</a></li>
-                        <li><a href="thecollective.html">The Collective</a></li>
+                        <li><a href="../about.html">Bio</a></li>
+                        <li><a href="../thecollective.html">The Collective</a></li>
                         <li><a href="https://ffm.bio/cryptic-poison">Feature FM Bio</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Legal</h3>
+                    <h3 class="fs-6 fw-bold">Music</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../music.html">Music</a></li>
+                        <li><a href="https://ffm.to/cp-osiris">Osiris</a></li>
+                        <li><a href="#">Breakin' Start</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Tour Vault</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../tourvault.html">Germany Tour 2026</a></li>
+                        <li><a href="../tourvault.html">West Coast Tour 2022</a></li>
+                        <li><a href="#">Forgotten Tour in Forgotten</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Blogs</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../posts.html">Blog Posts</a></li>
+                        <li><a href="../blogs/ai-detector-blog.html">AI Detector Blog</a></li>
+                        <li><a href="../blogs/anti-facebook-blog.html">Facebook Dead Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">No-AI Act &amp; Evidence</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../no-ai-policy.html">No-AI Policy</a></li>
+                        <li><a href="anti-ai-persona.html">Anti AI-Persona</a></li>
+                        <li><a href="tour-relics-and-process.html">Tour Relics &amp; Process</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Website Legal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Not</a></li>
+                        <li><a href="#">Yet</a></li>
+                        <li><a href="#">Available</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Band Legal</h3>
                     <ul class="list-unstyled">
                         <li><a href="#">Ask Manager</a></li>
-                        <li><a href="#">Prolly Ask Distributor</a></li>
                         <li><a href="#">Don't ask us!</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
@@ -117,7 +160,7 @@
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
                             </svg></span><span>Cryptic Poison</span></div>
-                    <p class="text-muted">We're still the group from the heading. It didn't alter.</p>
+                    <p class="text-muted">Est. 2013 – Chosen fam makin' music together.</p>
                 </div>
             </div>
             <hr>

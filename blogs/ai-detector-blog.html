@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Cryptic Poison</title>
+    <meta name="description" content="Discusses the cursedness of letting algorithms make automatic provenance claims about works they know f*ck all about.">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="icon" type="image/webp" sizes="1254x1254" href="../assets/img/Circular%20V3%20Noisy.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="../assets/css/Features-Minimal-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-dark" id="mainNav" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) 100%), url(&quot;../assets/img/Cryptic%20Banner.jpg&quot;) top / cover, rgb(45, 44, 56);">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><svg class="bi bi-music-note" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"></path>
+                        <path fill-rule="evenodd" d="M9 3v10H8V3z"></path>
+                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"></path>
+                    </svg></span><span>Cryptic Poison</span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../about.html">Bio</a><a class="dropdown-item" href="../thecollective.html">The Collective</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Music</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../music.html">Music</a><a class="dropdown-item" href="../thecollective.html">Tour Vault</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Discography</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../discography/osiris.html">Osiris</a><a class="dropdown-item" href="anti-ai-persona.html">Hella</a><a class="dropdown-item" href="lewdy-hell.html">Lewdy Hell</a><a class="dropdown-item" href="#">Breakin' Start</a><a class="dropdown-item" href="#">Groovin' Start</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="/posts.html">Blogs</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">No-AI Act &amp; Evidence</a>
+                        <div class="dropdown-menu border"><a class="dropdown-item" href="../no-ai-policy.html">No-AI Policy</a><a class="dropdown-item" href="anti-ai-persona.html">Anti AI-Persona</a><a class="dropdown-item" href="tour-relics-and-process.html">Tour Relics &amp; Process</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link visually-hidden invisible" href="/testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-11 col-xl-9 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Blog Post</p>
+                    <h2 class="fw-bold">AI Music Detector Issues</h2>
+                    <h3 class="fw-bold">The problem of false positives and "cursed" mastering</h3><span class="meta">Posted by&nbsp;<a href="../index.html">Cryptic Poison</a>&nbsp;on October 4, 2026</span>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div>
+                    <article class="mt-3 mb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-10 mx-auto">
+                                    <p class="lead">We consider the use of automated AI detectors as arbiters of creative provenance to be fundamentally misguided.</p>
+                                    <p>Such detectors may have a legitimate role as investigative signals. They do not establish provenance. That does not mean an automated forecast can never be correct. It means the forecast itself is not a reliable basis for establishing or publicly asserting the provenance of a creative work. Particular production styles, processing techniques or other characteristics may resemble patterns a classifier associates with AI, and legitimate human-made work can consequently be flagged as AI-generated.</p>
+                                    <p>We have seen this problem directly with our own music. We submitted one of our songs—a recording written, performed, recorded and produced by people—to two automated AI-music detectors. ANYANO classified the song overall as non-AI, while ArtifactNet classified the exact same recording as “AI GENERATED” with a reported 100% probability of AI. The recording did not somehow change its provenance between those two analyses: it was our human-made song in both cases. Two systems reached radically different conclusions, and maximum model confidence did not turn the incorrect conclusion into a fact.</p><a href="https://anyano.com/tools/ai-music-detector" target="_blank">
+                                        <div>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p class="mb-0">no detector output, including this one, is evidence of authorship.</p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">ANYANO</figcaption>
+                                            </figure>
+                                        </div>
+                                    </a><a href="https://demo.intrect.io">
+                                        <div>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p class="mb-0"><span class="fs-4">Why did it flag my own song as AI?</span><br>Heavy spectral processing (aggressive limiting, AI-era codec resampling, extreme stereo widening) can mimic AI residuals.</p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">ArtifactNet</figcaption>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                    <p>Even if such tools provide statistics of confidence, they never are confident over specific artistic choices. ArtifactNet provides a statistic with absolutely no clarity what songs and how many songs were tested. If they accumulate too from user inputs there even may be a hidden increase of false positives, this though applicable if they do that which isn't provided as information in the first place. This makes those tools a fun thing to play with or maybe even investigate but absolutely no tool to judge purely on a result. The bad clarity of how their reports were made doesn't exactly build trust neither.<br><span class="text-body-tertiary"><em>Note on Pat's end: I find it especially funny they want money for providing such tools that factually states fuck all.</em></span><br></p>
+                                    <p>Using such systems as the foundation of an enforcement system intended to prevent AI misuse therefore creates an obvious failure mode: genuine misuse may need to be addressed, while legitimate human artists can simultaneously be accused, restricted, demonetized or forced to defend themselves because their work happens to resemble patterns a classifier associates with AI.</p>
+                                    <p>A system intended to protect human creators should not do so by treating human creators as acceptable false positives. Human artists should not be publicly insulted by an algorithm – and by the corporation choosing to publish its output – without actual evidence that the algorithm's claim is true.</p>
+                                    <p class="fw-bold text-start text-success mt-0 pt-0"><span style="font-weight: normal !important;">If an automated detector raises a concern, investigate it.</span> Do not turn a forecast into a fact, an accusation, or a punishment.</p>
+                                    <p>ArtifactNet states that it counts as evidence for review. Should every artist now be insulted to prove their authorship just because the algorithms thinks it may have or has similarity in what AI produces even though they were trained by human music and specific master, mix and editing techniques simply leave such artifacts true. This is no evidence.<br><a href="https://intrect.io/artifactnet/">ArtifactNet</a><br></p>
+                                    <p class="fw-bold text-start text-danger mt-0 pt-0">This is no evidence. You can take it as hint but hints can be deliberately wrong.</p>
+                                    <p>Calling the algorithm's hint evidence would make everybody collecting false weather forecasts and appear in the court house. Is now a forecast let into court house being part of the proof as evidence?</p><a href="https://intrect.io/artifactnet/"><img class="img-fluid" width="1330" height="76" src="../assets/img/anet-screenshot.png"></a>
+                                    <p class="mt-3">And then the training data. I'm sorry but thanks for actually providing it. 6 real music sources to compare against? This obviously leaves huge genre gaps and specific styles especially for rock music and music that already contains electronic stuff that may be fitted onto a grid via Cubase or sometimes even with spectral editing and hard/harsh processing and editing techniques that are used to make a sound hit harder. In other words those tools can't really tell if a song is AI generated. They may tell whether they found patterns they associate with AI but those patterns don't exclusively exist in AI generated songs hence they can't tell whether a song was generated. Associations can help but don't determine a thing. How often do we misunderstand each other because we associated differently and talked past each other?</p>
+                                    <p class="mt-3"><em>Such tools&nbsp;</em><strong><em><span style="text-decoration: underline;">may</span></em></strong><em>&nbsp;even falsely advertise their software misleadingly (I've seen that often) or make false claims in their ads like "Find out if that song was generated by AI" or similar to gain more users. Those ads aren't restricted to normal ads. age descriptions etc. are equally involved which misleads the user. But this ain't a given to all services and I explicitly exclude ArtifactNet and&nbsp;ANYANO from this claim. Additionally this may change with time and regulations, meaning if you're reading this, some pages may have changed that already.</em></p>
+                                    <p class="fw-bold mt-3">The two sites, ANYANO and ArtrifactNet, I referenced both have written it fatly at the top that there is uncertainty.&nbsp;ANYANO stated it's not evidence, like shown above, while ArtifactNet shows the following:</p><a href="https://demo.intrect.io">
+                                        <div>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p class="mb-0">"A score is a signal to review, not proof of authorship."<br>"Detection is an analytical signal, not proof of authorship."</p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">ArtifactNet</figcaption>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                    <p class="mt-3">Though I would disagree partly on the wording of ArtifactNet as it later states that it's evidence which&nbsp;ANYANO correctly states: it is not, no matter how good the model is. But that's high-level word-picking for a nuance and I'm grateful they made that statement at all. I think that they put it into the heading makes it at least more fair, even though there will be humans only believing such an algorithm which obviously isn't their fault or another similar/exchangeable word for fault. Problem is that people from labels etc. do believe such algorithms blindly. We have questioned the release process of some distributors and the result was that they either follow the algorithms hint blindly instantly denying or questioning the artist and giving themselves more time actually release the tracks provided by the artist. <strong>This can hurt artists and it can hit financially. </strong>Still there is the issue of fraud that they're trying to address. The problem with the algorithmic tribunals is that people committing fraud know there ways and can make AI generated songs slip through and often quite easily while smaller artists often get the load of getting their work questioned and stalling their income. That's why I'd say that algorithms used in this way aren't quite the solution. They surely may help somehow but not in instantly denying if a song gets flagged nor in unnecessarily stalling the release just because the algorithm said: "May be AI" is this may have financial implications and therefore is a penalty which should be considered. This is pure experience and may change over time (hopefully).&nbsp;</p>
+                                    <p class="mt-3">ArtifactNet provides a precise false-positive rate of 1.3%, yet I could not find sufficient experimental documentation to independently reproduce or verify that number. Neither the detector page nor the papers linked there appear to provide the complete set of tested songs, the individual test results, or the calculations and aggregation method used to arrive at that result.<br>Presenting such a precise statistic without providing the experimental basis necessary to evaluate it is, in my opinion, highly misleading. To an ordinary visitor, “1.3% false-positive rate” can easily appear to be a scientifically established measure of the detector's reliability, while the publicly available information does not allow the reader to verify how that number was obtained or what population it actually describes. I find presenting performance statistics in this manner unacceptable, particularly when users may rely on those statistics when judging whether another person's work is AI-generated.<br>Even if the reported 1.3% is accepted as accurate for their particular test, that creates a separate problem: how representative was the test material? Six real-music sources leave substantial gaps in genre, production style, processing techniques, and other characteristics of human-made music. A false-positive rate measured on such material cannot simply be assumed to represent human music as a whole.</p>
+                                    <p class="fw-bold mt-3">Having previously studied physics and now studying mathematics, the lack of that information simply hit a nerve.</p>
+                                    <p class="mt-3">Additionally, our own experiments with ArtifactNet on human-made songs produced false positives in both of the two songs we tested. Some elements of the mixing and mastering workflow used on those recordings remain in our current workflow, and some detection algorithms still flag our material. This suggests that characteristics of our production process may contribute to these classifications. However, we have not isolated the responsible variables, so we cannot establish what specifically causes the detectors to react. Our sample consisted of only two songs, so the resulting 100% false-positive rate should not be interpreted as a meaningful estimate of the detector's general false-positive rate.<br>We also tested approximately four to six songs of us using&nbsp;ANYANO which had a false-positive rate of about 50%. But that rate should not be interpreted as a meaningful estimate on&nbsp;ANYANO either because of a similarly small sample size.</p>
+                                    <p class="text-start text-success mt-0 pt-0">I don't think the current ways of how it's done is the right way. <br><strong>But </strong>sometimes you have to turn wrongly to know where's right.</p>
+                                    <p class="mt-3">This article is not made to make any tool of that type or distributor etc. look bad. It simply focuses on the tool's limitations and on the impact it may have, when falsely used.</p>
+                                    <figure>
+                                        <blockquote class="blockquote">
+                                            <p class="mb-0">A knife is a tool. How it is used is solely up to the person or entity utilizing it.<br>One may cook with it. Another may commit murder.</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">Pat</figcaption>
+                                    </figure>
+                                    <p><span>Text by&nbsp;</span><a href="../thecollective.html">Pat</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark" style="background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.8) 100%), url(&quot;../assets/img/Lewdy%20Hell%20Art%206.webp&quot;) center / cover, rgb(45, 44, 56);">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">About</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../about.html">Bio</a></li>
+                        <li><a href="../thecollective.html">The Collective</a></li>
+                        <li><a href="https://ffm.bio/cryptic-poison">Feature FM Bio</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Music</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../music.html">Music</a></li>
+                        <li><a href="https://ffm.to/cp-osiris">Osiris</a></li>
+                        <li><a href="#">Breakin' Start</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Tour Vault</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../tourvault.html">Germany Tour 2026</a></li>
+                        <li><a href="../tourvault.html">West Coast Tour 2022</a></li>
+                        <li><a href="#">Forgotten Tour in Forgotten</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Blogs</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../posts.html">Blog Posts</a></li>
+                        <li><a href="../blogs/ai-detector-blog.html">AI Detector Blog</a></li>
+                        <li><a href="../blogs/anti-facebook-blog.html">Facebook Dead Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">No-AI Act &amp; Evidence</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../no-ai-policy.html">No-AI Policy</a></li>
+                        <li><a href="anti-ai-persona.html">Anti AI-Persona</a></li>
+                        <li><a href="tour-relics-and-process.html">Tour Relics &amp; Process</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Website Legal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Not</a></li>
+                        <li><a href="#">Yet</a></li>
+                        <li><a href="#">Available</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Band Legal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Ask Manager</a></li>
+                        <li><a href="#">Don't ask us!</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg class="icon icon-tabler icon-tabler-crown" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
+                            </svg></span><span>Cryptic Poison</span></div>
+                    <p class="text-muted">Est. 2013 – Chosen fam makin' music together.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2026 Cryptic Poison</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><svg class="bi bi-facebook visually-hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                        </svg></li>
+                    <li class="list-inline-item"><svg class="bi bi-twitter visually-hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
+                        </svg></li>
+                    <li class="list-inline-item"><svg class="bi bi-instagram visually-hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bold-and-dark.js"></script>
+</body>
+
+</html>
