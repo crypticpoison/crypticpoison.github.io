@@ -161,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section class="mb-5">
+    <section class="py-5">
         <div class="container bg-dark py-5">
             <div class="row">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -178,7 +178,7 @@
                                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"></path>
                                     </svg></div>
                                 <h5 class="fw-bold card-title">Follow or Subscribe us</h5>
-                                <p class="text-muted mb-4 card-text">Follows and subscriptions on every other platform than this one. It'll provide you information about new music and the eventuality of new gigs.</p><button class="btn btn-primary disabled shadow" type="button" disabled="">Hehe, you cannot click me</button>
+                                <p class="text-muted mb-4 card-text">Follow and subscribe us. It'll provide you information about new music and the eventuality of new gigs.</p><button class="btn btn-primary disabled shadow" type="button" disabled="">Hehe, you cannot click me</button>
                             </div>
                         </div>
                     </div>
@@ -227,6 +227,22 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="mb-5">
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <div class="text-white bg-dark border rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5">
+                    <div class="text-center text-lg-start w-50 py-3 py-lg-1">
+                        <h2 class="fw-bold mb-2"><strong>Subscribe to our news</strong></h2>
+                        <p class="mb-0">You will get notified of upcoming releases, concerts and tours; prolly.</p>
+                    </div>
+                    <form class="d-flex justify-content-center flex-wrap my-2" method="post">
+                        <div class="my-2"><input class="form-control" type="email" id="mail" name="email" placeholder="Your Email"></div>
+                        <div class="my-2"><button class="btn btn-primary ms-sm-2" id="sub" type="submit">Subscribe </button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </section>
     <footer class="bg-dark" style="background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.8) 100%), url(&quot;assets/img/Lewdy%20Hell%20Art%206.webp&quot;) center / cover, rgb(45, 44, 56);">
         <div class="container py-4 py-lg-5">
@@ -311,7 +327,39 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer><script>
+    const mail = document.querySelector("#mail");
+const sub = document.querySelector("#sub");
+
+sub.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  const email = mail.value.trim();
+
+  if (!mail.checkValidity()) {
+    mail.reportValidity();
+    return;
+  }
+
+  const response = await fetch(
+    "signup.crypticpoison.com",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    }
+  );
+
+  if (response.ok) {
+    alert("Check your inbox! 🌝");
+    mail.value = "";
+  } else {
+    alert("Something went wrong :(");
+  }
+});
+</script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
