@@ -74,7 +74,11 @@
                                 <hr>
                                 <div class="mb-3"><input class="form-control" type="number" id="coordinate-1" placeholder="Coordinate 1"></div>
                                 <div class="mb-3"><input class="form-control" type="number" id="coordinate-2" placeholder="Coordinate 2"></div>
-                                <div><button class="btn btn-primary w-100 d-block" id="calculate" type="submit">Calculate</button></div>
+                                <div class="d-flex justify-content-start gap-3">
+                                    <div class="dropdown w-25" id="currency"><button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">$</button>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">USD</a><a class="dropdown-item" href="#">EUR</a></div>
+                                    </div><button class="btn btn-primary d-block w-75" id="calculate" type="submit">Calculate</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -82,24 +86,94 @@
             </div>
             <div class="row gy-4 gy-xl-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-xl-flex align-items-xl-center mb-5">
                 <div class="col">
-                    <div class="card">
+                    <div class="card border" style="transform: scale(0.95);">
                         <div class="card-body text-center p-4">
                             <h6 class="text-uppercase text-muted card-subtitle">Cheapest</h6>
                             <h4 class="display-4 fw-bold card-title" id="cheapest">$68700</h4>
                         </div>
                         <div class="card-footer p-4">
                             <div>
-                                <ul class="list-unstyled">
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>You'll get live music.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>Absolute cheapest on record.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>You usually don't get this price.</span></li>
-                                </ul>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-dark table-sm table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th width="33%">What?</th>
+                                                <th>Estimate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Fuel</td>
+                                                <td id="fuel-c">Cell 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flights</td>
+                                                <td id="flights-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Keep</td>
+                                                <td id="keep-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caterings</td>
+                                                <td id="caterings-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Artists</td>
+                                                <td id="artists-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>GTF<span style="background-color: rgba(255, 255, 255, 0.03);">*</span></td>
+                                                <td id="transport-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Car Leasing</td>
+                                                <td id="leasing-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parking</td>
+                                                <td id="parking-c">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lightning</td>
+                                                <td>On you to find out.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*GTF = Gear Transport Fee</small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33.8%">Manager*</td>
+                                                <td id="mgmt-c">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*Cheap/Cheat at 5%, capped at 10k USD.</small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">VAT (19%)</td>
+                                                <td id="vat-c">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">Total</td>
+                                                <td id="total-c">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,46 +186,180 @@
                         </div>
                         <div class="card-footer p-4">
                             <div>
-                                <ul class="list-unstyled">
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>Most commonly established price.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>You'll get live music.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>You may be able to buy a concert specific disc.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>Morbi praesent aptent integer at.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
-                                </ul>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-dark table-sm table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th width="33%">What?</th>
+                                                <th>Estimate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Fuel</td>
+                                                <td id="fuel">Cell 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flights</td>
+                                                <td id="flights">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Keep</td>
+                                                <td id="keep">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caterings</td>
+                                                <td id="caterings">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Artists</td>
+                                                <td id="artists">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>GTF<span style="background-color: rgba(255, 255, 255, 0.03);">*</span></td>
+                                                <td id="transport">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Car Leasing</td>
+                                                <td id="leasing">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parking</td>
+                                                <td id="parking">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lightning</td>
+                                                <td>On you to find out.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*GTF = Gear Transport Fee</small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33.8%">Manager*</td>
+                                                <td id="mgmt">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*Typically at 7.5%<em>, capped at 10k USD.</em></small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">VAT (19%)</td>
+                                                <td id="vat">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">Total</td>
+                                                <td id="total">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card border" style="transform: scale(0.95);">
                         <div class="card-body text-center p-4">
                             <h6 class="text-uppercase text-muted card-subtitle"><span style="color: rgb(255, 255, 255);">expensive&nbsp;</span></h6>
                             <h4 class="display-4 fw-bold card-title" id="expensive">$204k</h4>
                         </div>
                         <div class="card-footer p-4">
                             <div>
-                                <ul class="list-unstyled">
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>Upper most price this far.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>You don't wanna pay that prolly.</span></li>
-                                    <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light me-2 bs-icon"><svg class="bi bi-check-lg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-                                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path>
-                                            </svg></span><span>We already see your shock, hehe.</span></li>
-                                </ul>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-dark table-sm table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th width="33%">What?</th>
+                                                <th>Estimate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Fuel</td>
+                                                <td id="fuel-e">Cell 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flights</td>
+                                                <td id="flights-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Keep</td>
+                                                <td id="keep-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caterings</td>
+                                                <td id="caterings-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Artists</td>
+                                                <td id="artists-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>GTF<span style="background-color: rgba(255, 255, 255, 0.03);">*</span></td>
+                                                <td id="transport-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Car Leasing</td>
+                                                <td id="leasing-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parking</td>
+                                                <td id="parking-e">Cell 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lightning</td>
+                                                <td>On you to find out.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*GTF = Gear Transport Fee</small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33.8%">Manager*</td>
+                                                <td id="mgmt-e">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><small class="fst-italic text-body-tertiary">*Expensive at 10%<em>, capped at 10k USD.</em></small>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">VAT (19%)</td>
+                                                <td id="vat-e">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <tbody>
+                                            <tr>
+                                                <td width="33%">Total</td>
+                                                <td id="total-e">Cell 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
